@@ -1,0 +1,15 @@
+@media (max-width: 820px) {
+  .nav-links { display: none; }
+  .section { padding: 84px 0; }
+  .hero-grid, .about-grid, .project-card, .experience-row, .education-card, .contact-bottom { grid-template-columns: 1fr !important; }
+  .hero h1 { font-size: clamp(64px, 20vw, 108px) !important; }
+  .hero-media { min-height: 420px; }
+  .skills-grid, .cert-grid { grid-template-columns: 1fr 1fr !important; }
+}
+
+@media (max-width: 560px) {
+  .container { width: min(calc(100% - 28px), var(--container)); }
+  .availability { display: none; }
+  .skills-grid, .cert-grid { grid-template-columns: 1fr !important; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+}

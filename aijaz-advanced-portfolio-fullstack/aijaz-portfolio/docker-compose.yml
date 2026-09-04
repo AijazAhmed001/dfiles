@@ -1,0 +1,31 @@
+services:
+  api:
+    build: ./backend/Portfolio.Api
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      DatabaseProvider: Sqlite
+      ConnectionStrings__DefaultConnection: Data Source=/data/portfolio.db
+      Admin__Username: ${ADMIN_USERNAME}
+      Admin__Password: ${ADMIN_PASSWORD}
+      Jwt__Key: ${JWT_KEY}
+      AllowedOrigins__0: http://localhost:5173
+    ports:
+      - "5000:8080"
+    volumes:
+      - portfolio_data:/data
+
+  frontend:
+    image: node:22-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    environment:
+      VITE_API_URL: http://localhost:5000
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
+
+volumes:
+  portfolio_data:

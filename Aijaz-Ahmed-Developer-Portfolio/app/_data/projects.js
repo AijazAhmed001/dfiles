@@ -1,0 +1,31 @@
+export const projects = [
+  {
+    slug: 'efu-inventory',
+    title: 'EFU IT Inventory',
+    year: '2026',
+    type: 'Enterprise Full-Stack System',
+    summary: 'A role-based hardware inventory platform for assets, allocations, audits, dashboards and PDF exports.',
+    stack: ['React', 'TypeScript', 'ASP.NET Core', 'SQL Server', 'JWT'],
+    liveUrl: 'https://efu-inventory-system-wji1.vercel.app/',
+    sourceUrl: 'https://github.com/AijazAhmed001/EFU-IT-Inventory-System',
+    accent: 'from-emerald-500 to-teal-900',
+  },
+  {
+    slug: 'efu-ai',
+    title: 'EFU AI Assistant',
+    year: '2026',
+    type: 'Enterprise AI Experience',
+    summary: 'A page-aware and role-aware assistant that turns business questions into verified answers, charts and tables.',
+    stack: ['React', 'FastAPI', 'RAG', 'WebSockets', 'SQL Server'],
+    accent: 'from-violet-500 to-indigo-950',
+  },
+  {
+    slug: 'nexus-hypercloud',
+    title: 'NEXUS HyperCloud',
+    year: '2026',
+    type: 'Cloud Platform Architecture',
+    summary: 'A multi-region cloud platform initiative spanning control planes, compute, networking, IAM, observability, SDKs and developer consoles.',
+    stack: ['.NET', 'React', 'Kubernetes', 'Kafka', 'PostgreSQL'],
+    accent: 'from-sky-500 to-slate-950',
+  },
+];

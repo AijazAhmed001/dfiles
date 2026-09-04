@@ -1,0 +1,7 @@
+import { Capabilities, Contact, Experience, Navbar, Transition } from '@/layout';
+
+export const metadata = { title: 'About', description: 'Aijaz Ahmed is a full-stack developer from Karachi building enterprise, AI and cloud products.' };
+
+export default function About() {
+  return <Transition><Navbar /><main><header className='bg-[#111318] px-6 pb-24 pt-40 text-white md:px-10 lg:px-16'><div className='mx-auto max-w-[1440px]'><p className='mb-8 text-xs uppercase tracking-[0.22em] text-white/45'>About Aijaz</p><h1 className='max-w-6xl text-[clamp(4rem,9vw,9.5rem)] leading-[0.9] tracking-[-0.05em]'>Developer by craft.<br /><span className='text-white/40'>Builder by nature.</span></h1></div></header><section className='container py-24 md:py-36'><div className='grid gap-12 border-t pt-8 lg:grid-cols-[1fr_2fr]'><h2 className='text-2xl'>The short version</h2><div className='max-w-4xl space-y-8 text-[clamp(1.5rem,3vw,2.8rem)] leading-[1.25]'><p>I’m a BS Computer Science student at Air University Karachi and a full-stack developer focused on software that solves real operational problems.</p><p className='text-muted-foreground'>My work spans enterprise inventory, AI-powered interfaces and multi-region cloud architecture. I care about polished experiences, explicit system boundaries and code teams can maintain.</p></div></div></section><Capabilities /><Experience /></main><Contact /></Transition>;
+}

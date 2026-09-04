@@ -1,0 +1,1 @@
+export const ROUTES={home:'/',login:'/login',temporary:'/temporary',settings:'/settings',conversation:(id:string)=>`/chat/${id}`} as const;

@@ -1,0 +1,1 @@
+export const voiceService={async transcribe(){await new Promise(r=>setTimeout(r,700));return'Karachi branch mein kitne active laptops hain?'}};

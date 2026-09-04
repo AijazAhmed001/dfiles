@@ -1,0 +1,1 @@
+import{detectLanguage}from '@/utils/language';export function useLanguage(){return{detect:detectLanguage}}

@@ -1,0 +1,1 @@
+import type{Message}from '@/types/Message';export const initialMessages:Message[]=[];

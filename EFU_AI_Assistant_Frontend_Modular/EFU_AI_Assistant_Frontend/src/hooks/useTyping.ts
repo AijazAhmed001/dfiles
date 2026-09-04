@@ -1,0 +1,1 @@
+import{useState}from'react';export function useTyping(){const[isTyping,setTyping]=useState(false);return{isTyping,start:()=>setTyping(true),stop:()=>setTyping(false)}}

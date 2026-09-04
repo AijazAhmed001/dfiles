@@ -1,0 +1,1 @@
+import{TrendingUp}from'lucide-react';export function SummaryCard(){return <div className="insight-card"><span className="insight-icon"><TrendingUp size={17}/></span><div><p className="text-sm font-semibold">Key insight</p><p className="mt-1 text-sm text-muted">Karachi has approximately 34% more active laptops than Lahore.</p></div></div>}

@@ -1,0 +1,1 @@
+export function LoadingScreen(){return <div className="grid min-h-screen place-items-center"><div className="flex items-center gap-3 text-sm text-muted"><span className="spinner"/>Loading EFU AI Assistant…</div></div>}

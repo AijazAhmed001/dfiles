@@ -1,0 +1,1 @@
+export type MessageRole='user'|'assistant';export interface ChartPoint{label:string;value:number}export interface DataRow{branch:string;active:number;assigned:number;available:number;maintenance:number}export interface Message{ id:string; role:MessageRole; text:string; time:string; verified?:boolean; source?:string; records?:number; chart?:ChartPoint[]; rows?:DataRow[] }

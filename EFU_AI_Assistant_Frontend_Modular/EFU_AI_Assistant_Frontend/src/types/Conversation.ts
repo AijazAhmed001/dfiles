@@ -1,0 +1,1 @@
+export interface Conversation{ id:string; title:string; group:'Pinned'|'Today'|'Yesterday'|'Previous 7 days'|'Previous 30 days'; pinned?:boolean }

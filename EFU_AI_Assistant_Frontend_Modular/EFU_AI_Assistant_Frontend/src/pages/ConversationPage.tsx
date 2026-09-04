@@ -1,0 +1,1 @@
+import {ChatContainer} from '@/components/chat/ChatContainer';export function ConversationPage({temporary=false}:{temporary?:boolean}){return <ChatContainer temporary={temporary}/>}

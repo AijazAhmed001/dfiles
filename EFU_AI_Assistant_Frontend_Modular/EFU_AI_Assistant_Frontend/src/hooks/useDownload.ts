@@ -1,0 +1,1 @@
+import{useToast}from '@/context/ToastContext';import{exportService}from '@/services/exportService';import type{ExportFormat}from '@/types/Export';export function useDownload(){const{show}=useToast();return(format:ExportFormat,content:string)=>{exportService.export(format,content);show(`${format} export prepared`)}}

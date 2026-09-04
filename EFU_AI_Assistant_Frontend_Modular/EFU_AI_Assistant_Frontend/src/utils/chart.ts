@@ -1,0 +1,1 @@
+import type{ChartPoint}from '@/types/Message';export const chartTotal=(data:ChartPoint[])=>data.reduce((total,item)=>total+item.value,0);

@@ -1,0 +1,1 @@
+import type{LoginValues}from '@/utils/validation';export const authService={async login(values:LoginValues){await new Promise(r=>setTimeout(r,700));return{token:'demo-token',user:{id:'u1',name:'Aijaz Ahmed',initials:'AA',department:'IT Department',role:'IT Administrator'},values}}};

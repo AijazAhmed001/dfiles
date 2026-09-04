@@ -1,0 +1,1 @@
+import type{Message}from './Message';export interface ChatState{messages:Message[];isTyping:boolean}

@@ -1,0 +1,1 @@
+import{Paperclip}from'lucide-react';export function AttachmentButton(){return <button className="composer-icon" title="Attach file"><Paperclip size={18}/></button>}

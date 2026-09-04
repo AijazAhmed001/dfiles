@@ -1,0 +1,1 @@
+import{Sparkles}from'lucide-react';export function Logo(){return <div className="flex items-center gap-3"><span className="logo-mark">EFU<span className="logo-dot"/></span><div><p className="font-semibold leading-tight">EFU AI Assistant</p><p className="text-xs text-muted">Secure Data Assistant</p></div><Sparkles className="ml-auto text-brand" size={17}/></div>}

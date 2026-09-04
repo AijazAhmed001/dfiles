@@ -1,0 +1,1 @@
+export function SimpleAnswer({text}:{text:string}){return <p className="answer-text" dir={/[؀-ۿ]/.test(text)?'rtl':'ltr'}>{text}</p>}

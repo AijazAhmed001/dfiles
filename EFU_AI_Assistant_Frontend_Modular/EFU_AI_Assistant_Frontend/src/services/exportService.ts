@@ -1,0 +1,1 @@
+import type{ExportFormat}from '@/types/Export';import{downloadText}from '@/utils/download';export const exportService={export(format:ExportFormat,content:string){if(format==='Print'){window.print();return}const ext=format==='PDF'?'txt':format==='Word'?'doc':format==='Excel'?'csv':'csv';downloadText(`efu-ai-response.${ext}`,content)}};

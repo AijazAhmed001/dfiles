@@ -1,0 +1,1 @@
+import {LoginCard} from '@/components/auth/LoginCard';export function LoginPage(){return <main className="relative grid min-h-screen place-items-center overflow-hidden bg-app p-6"><div className="login-glow"/><LoginCard/></main>}

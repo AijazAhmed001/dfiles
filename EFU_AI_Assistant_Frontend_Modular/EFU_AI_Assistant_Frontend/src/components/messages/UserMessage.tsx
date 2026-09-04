@@ -1,0 +1,1 @@
+import{Avatar}from '@/components/common/Avatar';import type{Message}from '@/types/Message';export function UserMessage({message}:{message:Message}){return <div className="message-row message-row-user"><div className="max-w-[75%]"><div className="user-bubble">{message.text}</div><p className="message-time text-right">{message.time}</p></div><Avatar initials="AA" size="sm"/></div>}

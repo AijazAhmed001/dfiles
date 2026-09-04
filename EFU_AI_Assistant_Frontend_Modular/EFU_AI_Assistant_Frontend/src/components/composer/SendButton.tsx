@@ -1,0 +1,1 @@
+import{ArrowUp}from'lucide-react';export function SendButton({disabled,onClick}:{disabled:boolean;onClick:()=>void}){return <button disabled={disabled} onClick={onClick} className="send-button" title="Send"><ArrowUp size={18}/></button>}

@@ -1,0 +1,1 @@
+export type DetectedLanguage='english'|'urdu'|'roman-urdu';export function detectLanguage(text:string):DetectedLanguage{if(/[؀-ۿ]/.test(text))return'urdu';const roman=/(kya|kitne|dikhao|hain|mein|ka|ke|ki|mujhe|branch)/i;return roman.test(text)?'roman-urdu':'english'}

@@ -1,0 +1,1 @@
+import{Sparkles}from'lucide-react';export function StreamingMessage(){return <div className="message-row"><div className="assistant-avatar"><Sparkles size={17}/></div><div className="thinking-card"><span className="thinking-dot"/><span className="thinking-dot"/><span className="thinking-dot"/><p>Searching authorized EFU data…</p></div></div>}

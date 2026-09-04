@@ -1,0 +1,1 @@
+import {WelcomeScreen} from '@/components/chat/WelcomeScreen';export function ChatHomePage(){return <WelcomeScreen/>}

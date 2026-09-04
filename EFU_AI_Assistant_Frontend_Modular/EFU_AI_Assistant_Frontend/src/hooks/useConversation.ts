@@ -1,0 +1,1 @@
+import{useParams}from'react-router-dom';export function useConversation(){const{conversationId}=useParams();return{conversationId:conversationId??'new'}}

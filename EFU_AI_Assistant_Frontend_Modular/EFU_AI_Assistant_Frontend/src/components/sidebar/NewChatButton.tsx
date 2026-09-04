@@ -1,0 +1,1 @@
+import{Plus}from'lucide-react';import{useNavigate}from'react-router-dom';export function NewChatButton({collapsed}:{collapsed:boolean}){const nav=useNavigate();return <button onClick={()=>nav('/')} className={`new-chat-button ${collapsed?'new-chat-collapsed':''}`} title="New chat"><Plus size={18}/>{!collapsed&&<span>New chat</span>}</button>}

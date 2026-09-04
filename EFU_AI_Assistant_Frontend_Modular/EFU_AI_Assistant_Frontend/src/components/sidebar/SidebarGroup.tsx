@@ -1,0 +1,1 @@
+import type{PropsWithChildren}from'react';export function SidebarGroup({title,children}:PropsWithChildren<{title:string}>){return <section className="mt-5"><h3 className="sidebar-group-title">{title}</h3><div className="mt-1 space-y-0.5">{children}</div></section>}

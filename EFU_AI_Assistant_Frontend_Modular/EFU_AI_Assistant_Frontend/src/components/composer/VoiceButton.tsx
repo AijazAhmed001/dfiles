@@ -1,0 +1,1 @@
+import{Mic}from'lucide-react';export function VoiceButton({onClick,active=false}:{onClick:()=>void;active?:boolean}){return <button onClick={onClick} className={`composer-icon ${active?'composer-icon-active':''}`} title="Voice input"><Mic size={18}/></button>}

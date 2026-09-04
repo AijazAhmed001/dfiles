@@ -1,0 +1,1 @@
+export type VoiceStatus='idle'|'recording'|'processing'|'ready';export interface VoiceState{status:VoiceStatus;duration:number;transcript:string}

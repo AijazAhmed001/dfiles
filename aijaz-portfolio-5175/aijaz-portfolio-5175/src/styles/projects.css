@@ -1,0 +1,21 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 38px;
+}
+
+.filter-button {
+  padding: 10px 17px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--background);
+  color: var(--text-muted);
+  font-weight: 750;
+}
+
+.filter-button--active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+}

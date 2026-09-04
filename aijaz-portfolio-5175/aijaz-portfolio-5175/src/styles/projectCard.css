@@ -1,0 +1,132 @@
+.project-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--background);
+  box-shadow: var(--shadow-sm);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.project-image {
+  position: relative;
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.project-image > span {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 2;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111318;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.project-image--inventory {
+  background: linear-gradient(135deg, #07111f, #133663);
+}
+
+.project-image--assistant {
+  background: linear-gradient(135deg, #120b25, #3d1c76);
+}
+
+.project-image--watch {
+  background: linear-gradient(135deg, #20110c, #6b2f1c);
+}
+
+.project-image--vscode {
+  background: linear-gradient(135deg, #081726, #0d5484);
+}
+
+.project-window {
+  width: 92%;
+  transform: rotate(-3deg);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  background: rgba(9, 14, 23, 0.88);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.34);
+}
+
+.project-window__bar {
+  display: flex;
+  gap: 7px;
+  padding: 13px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.project-window__bar i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.project-window__content {
+  display: grid;
+  gap: 13px;
+  padding: 25px;
+}
+
+.project-window__content div {
+  height: 18px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(168, 217, 0, 0.76), rgba(59, 130, 246, 0.55));
+}
+
+.project-window__content div:nth-child(2) {
+  width: 76%;
+}
+
+.project-window__content div:nth-child(3) {
+  width: 48%;
+}
+
+.project-card__body {
+  padding: 27px;
+}
+
+.project-card__category {
+  color: var(--accent-strong);
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-card h2 {
+  margin: 9px 0 10px;
+  font-size: 1.42rem;
+}
+
+.project-card p {
+  margin: 0 0 20px;
+  color: var(--text-muted);
+}
+
+.project-card__actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.project-card__actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.86rem;
+  font-weight: 800;
+}

@@ -1,0 +1,328 @@
+/* =========================================
+   NAVBAR WRAPPER
+========================================= */
+
+.navbar-wrap {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 0 7%;
+
+  background: #f7f7f5;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   MAIN NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  max-width: 1180px;
+
+  min-height: 64px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 34px;
+
+  padding: 0 12px 0 14px;
+
+  background: rgba(10, 10, 10, 0.55);
+
+  border: none;
+
+  border-radius: 0 0 22px 22px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.14);
+
+  pointer-events: auto;
+
+  position: relative;
+}
+
+
+/* =========================================
+   BRAND / LOGO
+========================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  color: #0c0c0c;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+
+/* Blue logo box like reference */
+
+.brand::before {
+  content: "";
+
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #feffff 0%,
+      #879096 40%,
+      #3f475c 100%
+    );
+
+  box-shadow:
+    inset 0 2px 4px rgba(215, 230, 148, 0.75),
+    0 3px 10px rgba(163, 191, 226, 0.35);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.brand:hover::before {
+  transform: translateY(-2px);
+
+  box-shadow:
+    inset 0 2px 4px rgba(139, 131, 131, 0.8),
+    0 7px 18px rgba(158, 126, 104, 0.48);
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  margin-left: auto;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #8e8e93;
+}
+
+
+.nav-links a {
+  position: relative;
+
+  color: #8c8c91;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.nav-links a:hover {
+  color: #ccbb5a;
+  
+
+}
+
+
+/* little underline */
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  transform: translateX(-50%);
+
+  transition: width 0.25s ease;
+}
+
+
+.nav-links a:hover::after {
+  width: 18px;
+}
+
+
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.nav-cta {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 40px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #080808;
+
+  font-size: 13px;
+  font-weight: 750;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6),
+    0 4px 14px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.nav-cta:hover {
+  color: #000;
+
+  background: #f1f1f1;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================
+   OPTIONAL ACTIVE LINK
+========================================= */
+
+.nav-links a.active {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   DESKTOP RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .navbar-wrap {
+    padding: 0 24px;
+  }
+
+  .navbar {
+    gap: 22px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .navbar-wrap {
+    padding: 0 16px;
+  }
+
+  .navbar {
+    min-height: 60px;
+
+    padding: 0 10px 0 14px;
+  }
+
+  .nav-links {
+    gap: 14px;
+
+    font-size: 12px;
+  }
+
+  .nav-cta {
+    min-height: 37px;
+
+    padding: 0 15px;
+
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .navbar-wrap {
+    padding: 0 10px;
+  }
+
+  .navbar {
+    min-height: 58px;
+
+    border-radius: 0 0 18px 18px;
+  }
+
+  .brand {
+    font-size: 14px;
+  }
+
+  .brand::before {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 8px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    margin-left: auto;
+  }
+}

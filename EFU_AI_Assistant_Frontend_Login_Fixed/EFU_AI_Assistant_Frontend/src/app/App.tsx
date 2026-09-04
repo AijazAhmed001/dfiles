@@ -1,0 +1,10 @@
+import { AppProviders } from "./Providers";
+import { AppRoutes } from "./Routes";
+
+export function App() {
+    return (
+        <AppProviders>
+            <AppRoutes />
+        </AppProviders>
+    );
+}
